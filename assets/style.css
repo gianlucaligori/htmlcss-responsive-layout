@@ -67,11 +67,67 @@ nav {
 }
 
 .container {
-    height: 400px;
+    height: 400px; /* DA TOGLIERE FISSA*/
 }
 
 .box {
-    background-color: grey;
+    background-color: lightgrey; /*DA TOGLIERE*/
 }
 
+
+    /* END FIRST BOX */
+
+
+.planbox {
+    display: flex;
+    width: 100%;
+    background-color: rgba(151,146,228,255);
+}
+
+.planleft {
+    width: 50%;
+}
+
+.planright {
+    width: 50%;
+}
+
+
+/* END BOX 2 */
+
+
+.introducing-partners {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.partners {
+    max-width: 70%;
+    margin-inline: auto;
+}
+
+.partnersquote {
+    background-color: rgba(151,146,228,255);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.quotebox {
+    width: 100%;
+}
+
+.quote {
+    margin-bottom: 1rem;
+}
+
+.partnersquote img{
+    padding: 1rem;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 
