@@ -3,3 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+header {
+    height: 5rem;
+    background-color: rgba(0,132,253,255);
+    max-width: 100%;
+}
+
+nav {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ADD HIDDEN MENU */
+
+
+.logo {
+    height: 70%;
+}
+
+/*FINE NAV*/
+
+
+
+.container-grid {
+	max-width: 75%;
+	margin-inline: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.grid {
+	--gapx: 1rem;
+	--gapy: 2rem;
+}
+
+.cells {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cells {
+	gap: var(--gapy) var(--gapx);
+}
+
+.cell .content {
+	height: 200px; /*DA TOGLIERE ALTEZZA*/
+    background-color: rgba(181,221,255,255);
+    border-radius: 10px;
+}
+
+.cell {
+	flex-basis: calc((100% - 2 * var(--gapx)) / 3);
+	height: 200px;
+}
+
+.cell-hero {
+	flex-basis: calc(2 * ((100% - 2 * var(--gapx)) / 3) + var(--gapx));
+}
+
+.container {
+    height: 400px;
+}
+
+.box {
+    background-color: grey;
+}
+
+
