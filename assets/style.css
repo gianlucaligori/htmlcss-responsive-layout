@@ -70,11 +70,6 @@ nav {
     height: 400px; /* DA TOGLIERE FISSA*/
 }
 
-.box {
-    background-color: lightgrey; /*DA TOGLIERE*/
-}
-
-
     /* END FIRST BOX */
 
 
@@ -96,6 +91,8 @@ nav {
 /* END BOX 2 */
 
 
+
+/* PARTNER CONTAINER  */
 .introducing-partners {
     text-align: center;
     padding-top: 3rem;
@@ -129,5 +126,66 @@ nav {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+/* WORKING WITH US */
+
+
+.benefits-title{
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 5rem;
+    font-size: 2.5rem;    
+}
+
+.benefits-box{
+    margin-top: 10rem;
+    background-color: rgba(151,146,228,255);
+}
+
+.benefits-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    padding-bottom: 8rem;
+
+}
+
+.square-benefits{
+    width: calc((100% - 2rem) / 3);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.number{
+    font-size: 3rem;
+
+}
+
+.info-benefits, .number{
+    color: rgb(151, 146, 228);
+}
+
+.info-benefits {
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.benefits-p {
+    max-width: 90%;
+    line-height: 1.5rem;
+}
+
+.button-benefits{
+    margin-top: 2rem;
+    background-color: rgb(151, 146, 228);
+    color: white;
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    border-radius: 1.5rem;
 }
 
