@@ -94,10 +94,28 @@ nav {
 
 /* PARTNER CONTAINER  */
 .introducing-partners {
+    width: 70%;
+    margin-inline: auto;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+.partners-h4 {
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+.partners-h2 {
+    margin-bottom: 2rem;
+    color: rgb(151, 146, 228);
+    font-size: 3rem;
+}
+
+.partners-p {
+    font-size: 1.2rem;
+}
+
 
 .partners {
     max-width: 70%;
@@ -140,11 +158,14 @@ nav {
 }
 
 .benefits-box{
+
     margin-top: 10rem;
     background-color: rgba(151,146,228,255);
 }
 
 .benefits-grid{
+    width: 70%;
+    margin-inline: auto;
     display: flex;
     flex-wrap: wrap;
     gap: .8rem;
@@ -183,9 +204,135 @@ nav {
     margin-top: 2rem;
     background-color: rgb(151, 146, 228);
     color: white;
-    height: 2rem;
-    width: 5rem;
+    max-height: 2rem;
+    max-width: 5rem;
     border: none;
     border-radius: 1.5rem;
 }
 
+/* ABOUT US */
+
+.about-us {
+    width: 70%;
+    margin-inline: auto;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about-left {
+    flex: 0 1 50%;
+
+}
+
+.about-title {
+    margin-bottom: 3rem;
+    color: rgb(151, 146, 228);
+}
+
+.about-p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-img {
+    padding: 1rem;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.helper {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.helper-p {
+    width: 50%;
+    font-size: 1.5rem;
+    color: rgb(151, 146, 228);
+}
+
+.li-link {
+    margin-top: 2rem;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(151, 146, 228);
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* AGGIUNGERE LOGO QUOTE */
+
+
+/* FINE ABOUT US */
+
+
+
+/* GET START BOX */
+
+.getstart-bg {
+    margin-top: 4rem;
+    background-color: rgb(151, 146, 228);
+    padding-top: 3rem;
+    color: white;
+}
+
+.getstart-box {
+    width: 50%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.getstart-p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.getstart-title,
+.simple-title,
+.free-title {
+    margin-bottom: 2rem;
+}
+
+.free-title {
+    font-size: 4rem;
+    color: goldenrod;
+}
+
+.simple-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.getstart-title {
+    font-size: 1.5rem;
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.footer-info {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+    width: 50%;
+    margin-inline: auto;
+}
+
+.footer-p {
+    margin-bottom: 2rem;
+}
