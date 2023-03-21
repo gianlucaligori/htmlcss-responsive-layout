@@ -9,6 +9,7 @@ header {
     height: 5rem;
     background-color: rgba(0,132,253,255);
     max-width: 100%;
+    margin-inline: auto;
 }
 
 nav {
@@ -19,6 +20,25 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+.menu-icon {
+    color: white;
+    display: none;
+}
+
+@media (max-width: 1282px) {
+    .menu {
+    display: none;
+    color: white;
+    }
+
+    .menu-icon {
+        font-size: 4rem;
+        color: white;
+        display: inline;
+    }
+}
+    
 
 /* ADD HIDDEN MENU */
 
@@ -54,12 +74,32 @@ nav {
 	max-width: 75%;
 	margin-inline: auto;
     padding-bottom: 4rem;
+    display: flex;
+	flex-wrap: wrap;
+    --gapx: 1rem;
+	--gapy: 10rem;
 }
 
-.grid {
-	--gapx: 1rem;
-	--gapy: 4rem;
+@media  (max-width: 700px) {
+
+    .planleft,
+    .planright {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+@media  (max-width: 700px) {
+
+    .box .planbox {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 .cells {
     display: flex;
@@ -257,12 +297,39 @@ nav {
     border-radius: 2rem;
 }
 
+/* MOBILE 700PX */
+@media  (max-width: 700px) {
+
+    .partnersquote {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .quotebox {
     width: 100%;
 }
 
+/* MOBILE 700PX */
+@media  (max-width: 700px) {
+
+    .quotebox {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
 .quote {
+    color: white;
     margin-bottom: 1rem;
+}
+
+.name {
+    color: white;
 }
 
 .partnersquote img{
@@ -297,7 +364,15 @@ nav {
     flex-wrap: wrap;
     gap: .8rem;
     padding-bottom: 8rem;
+}
 
+@media  (max-width: 700px) {
+
+    .benefits-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .square-benefits{
@@ -305,6 +380,16 @@ nav {
     background-color: white;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+@media  (max-width: 700px) {
+
+    .square-benefits {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .number{
@@ -346,6 +431,14 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+@media  (max-width: 700px) {
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .about-left {
