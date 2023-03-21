@@ -8,7 +8,7 @@
 header {
     height: 5rem;
     background-color: rgba(0,132,253,255);
-    max-width: 100%;
+    max-width: 1300px;
     margin-inline: auto;
 }
 
@@ -26,18 +26,7 @@ nav {
     display: none;
 }
 
-@media (max-width: 1282px) {
-    .menu {
-    display: none;
-    color: white;
-    }
 
-    .menu-icon {
-        font-size: 4rem;
-        color: white;
-        display: inline;
-    }
-}
     
 
 /* ADD HIDDEN MENU */
@@ -71,32 +60,12 @@ nav {
 }
 
 .container-grid {
-	max-width: 75%;
+	max-width: 1300px;
 	margin-inline: auto;
-    padding-bottom: 4rem;
     display: flex;
 	flex-wrap: wrap;
     --gapx: 1rem;
-	--gapy: 10rem;
-}
-
-@media  (max-width: 700px) {
-
-    .planleft,
-    .planright {
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media  (max-width: 700px) {
-
-    .box .planbox {
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-    }
+	--gapy: 1rem;
 }
 
 
@@ -173,7 +142,6 @@ nav {
 
 .cell {
     flex-basis: calc((100% - 2 * var(--gapx)) / 3);
-	height: 200px;
 }
 
 .cell-big {
@@ -185,29 +153,32 @@ nav {
     height: 220px;
 }
 
-    /* END FIRST BOX */
+/* END FIRST BOX */
 
 
+
+/* PLAN BOX */
 .planbox {
+    max-width: 1300px;
+    margin-inline: auto;
     display: flex;
-    justify-content: center;
-    width: 100%;
     background-color: rgba(151,146,228,255);
 }
 
 .planleft,
 .planright {
-    width: 30%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 5rem 0 5rem 0;
+    padding-inline: 5rem;
 }
 
 .planright {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .white-box-plan {
@@ -218,8 +189,8 @@ nav {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top: 15rem;
-    padding: 4rem 0 4rem 0;
+    margin-top: 5rem;
+    padding: 2rem;
 }
 
 .plan-title,
@@ -261,7 +232,7 @@ nav {
 
 /* PARTNER CONTAINER  */
 .introducing-partners {
-    width: 70%;
+    max-width: 1300px;
     margin-inline: auto;
     text-align: center;
     padding-top: 3rem;
@@ -285,7 +256,7 @@ nav {
 
 
 .partners {
-    max-width: 70%;
+    max-width: 1300px;
     margin-inline: auto;
 }
 
@@ -297,31 +268,11 @@ nav {
     border-radius: 2rem;
 }
 
-/* MOBILE 700PX */
-@media  (max-width: 700px) {
-
-    .partnersquote {
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 .quotebox {
     width: 100%;
 }
 
-/* MOBILE 700PX */
-@media  (max-width: 700px) {
-
-    .quotebox {
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-    }
-}
 
 .quote {
     color: white;
@@ -352,27 +303,19 @@ nav {
 }
 
 .benefits-box{
-
+    max-width: 1300px;
+    margin-inline: auto;
     margin-top: 10rem;
     background-color: rgba(151,146,228,255);
 }
 
 .benefits-grid{
-    width: 70%;
+    max-width: 80%;
     margin-inline: auto;
     display: flex;
     flex-wrap: wrap;
     gap: .8rem;
     padding-bottom: 8rem;
-}
-
-@media  (max-width: 700px) {
-
-    .benefits-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .square-benefits{
@@ -382,15 +325,7 @@ nav {
     border-radius: 1rem;
 }
 
-@media  (max-width: 700px) {
 
-    .square-benefits {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 .number{
     font-size: 3rem;
@@ -433,13 +368,6 @@ nav {
     position: relative;
 }
 
-@media  (max-width: 700px) {
-
-    .about-us {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 .about-left {
     flex: 0 1 50%;
@@ -555,4 +483,85 @@ footer {
 
 .footer-p {
     margin-bottom: 2rem;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+
+
+/* MOBILE */
+
+@media  (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+    .menu-icon {
+        display: inline;
+    }
+
+    .planleft,
+    .planright {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .planbox {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .introducing-partners {
+        margin-inline: auto;
+        text-align: center;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .partnersquote {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .quotebox {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefits-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square-benefits {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cells {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
