@@ -56,35 +56,91 @@ nav {
 
 .grid {
 	--gapx: 1rem;
-	--gapy: 2rem;
+	--gapy: 4rem;
 }
 
 .cells {
-	display: flex;
+    display: flex;
 	flex-wrap: wrap;
-}
-
-.cells {
 	gap: var(--gapy) var(--gapx);
 }
 
-.cell .content {
-	height: 200px; /*DA TOGLIERE ALTEZZA*/
+.cell .content-big {
     background-color: rgba(181,221,255,255);
     border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+.cell-title,
+.cell-p,
+.cell-a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.i {
+    font-size: 5rem;
+}
+
+.cell-title {
+    font-size: 1.5rem;
+    color: rgba(0,132,253,255);
+}
+
+
+.cell-p {
+    font-size: 1.1rem;
+}
+
+.cell-a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.cell-icon {
+    margin-top: .5rem;
+    font-size: 3rem;
+    color: rgba(0,132,253,255);
+}
+.content-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.content-small {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(181,221,255,255);
+    border-radius: 10px;
+
 }
 
 .cell {
-	flex-basis: calc((100% - 2 * var(--gapx)) / 3);
+    flex-basis: calc((100% - 2 * var(--gapx)) / 3);
 	height: 200px;
 }
 
-.cell-hero {
-	flex-basis: calc(2 * ((100% - 2 * var(--gapx)) / 3) + var(--gapx));
+.cell-big {
+    flex-basis: calc(2 * ((100% - 2 * var(--gapx)) / 3) + var(--gapx));
+    
 }
 
-.container {
-    height: 400px; /* DA TOGLIERE FISSA*/
+.cell-phone {
+    height: 220px;
 }
 
     /* END FIRST BOX */
@@ -92,17 +148,56 @@ nav {
 
 .planbox {
     display: flex;
+    justify-content: center;
     width: 100%;
     background-color: rgba(151,146,228,255);
 }
 
-.planleft {
+.planleft,
+.planright {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-title,
+.plan-p {
+    margin-top: 1rem;
+}
+
+.plan-title {
+    font-size: 2rem;
+}
+
+.plan-p {
+    color: white;
+}
+
+
+.planning1,
+.planning2 {
+    width: 400px;
+}
+
+/* .planleft {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
 }
 
 .planright {
     width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.planning1,
+.planning2 {
+    height: 300px;
+} */
 
 
 /* END BOX 2 */
