@@ -494,7 +494,7 @@ footer {
 
 /* MOBILE */
 
-@media  (max-width: 768px) {
+@media  (max-width: 480px) {
 
     .menu {
         display: none;
@@ -563,5 +563,21 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        flex-basis: auto;
+    }
+
+    .cell-big {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: auto;
+
+    }
+
+    .container-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: auto;
     }
 }
